@@ -58,7 +58,7 @@ Build a "Low Priority" section that groups all low bucket messages
 Display a count header: "These N emails are low priority"
 Render a checklist where all items are pre-selected by default
 Allow the user to uncheck/deselect specific emails they want to keep visible
-Provide a "Mark as Reviewed" or "Archive" action button for the remaining selected items (update status in Bolt Database, UI removes them from the list)
+Provide a "Mark as Reviewed" or "Archive" action button for the remaining selected items (update status in indexed Database, UI removes them from the list)
 Persist user's deselection choices so they survive page refresh
 
 8. Explainability Layer
