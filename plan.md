@@ -55,7 +55,6 @@ Detail view for individual messages: show full classification result, priority s
 
 
 7. Low Priority Cleanup Feature
-
 Build a "Low Priority" section that groups all low bucket messages
 Display a count header: "These N emails are low priority"
 Render a checklist where all items are pre-selected by default
