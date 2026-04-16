@@ -11,7 +11,6 @@ Initialize Local Indexed DB Database
 Create messages table with fields: id, user_id, provider_message_id, thread_id, sender, subject, body_snippet, received_at, raw_payload_ref, category, priority_score, priority_bucket, classification_reason
 Create tasks table with fields: id, message_id, user_id, title, priority, status, created_at
 Create users table to store Google OAuth profile and access token references
-Enable Row Level Security (RLS) on all tables so users only see their own data
 Create a classification_cache table to avoid re-classifying the same emails
 
 
