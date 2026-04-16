@@ -36,8 +36,10 @@ Category weight (action_required = highest, spam_promo = lowest)
 Urgency keyword scan (deadline, urgent, expires, confirm, verify)
 Sender importance (known domains, reply-to patterns)
 Map score to priority bucket: critical, high, medium, low
-Persist classification and score back to the messages table in Bolt Database
-5. Task Extraction Engine
+Persist classification and score back to the messages table in indexed DB
+
+
+6. Task Extraction Engine
 
 Build a TaskExtractionService that scans messages classified as action_required or with critical/high priority
 Use regex patterns to detect actionable language: scheduled appointments, payment deadlines, confirmation requests, form completions
