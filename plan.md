@@ -52,6 +52,8 @@ Panel 1 - Unified Inbox: display all fetched messages sorted by received_at, sho
 Panel 2 - Priority Feed: filter and display only critical and high priority messages; include visual indicators (color-coded priority badges); show a quick summary of how many items need attention
 Panel 3 - Task Panel: list all extracted tasks with title, source email, priority, and status; allow marking tasks as done (status update only, no deletion)
 Detail view for individual messages: show full classification result, priority score, and the explainability reason string
+
+
 7. Low Priority Cleanup Feature
 
 Build a "Low Priority" section that groups all low bucket messages
