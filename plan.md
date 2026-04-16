@@ -61,14 +61,14 @@ Render a checklist where all items are pre-selected by default
 Allow the user to uncheck/deselect specific emails they want to keep visible
 Provide a "Mark as Reviewed" or "Archive" action button for the remaining selected items (update status in Bolt Database, UI removes them from the list)
 Persist user's deselection choices so they survive page refresh
-8. Explainability Layer
 
+8. Explainability Layer
 On each message card and in the detail view, display a "Why this priority?" tooltip or inline section
 Show the classification_reason field in plain English
 Display contributing factors as a short list (e.g., "Promotional language detected", "No action verb found", "Sender matches known newsletter pattern")
 Show the category label alongside the reason for full transparency
-9. Background Sync & State Management
 
+9. Background Sync & State Management
 Build a useEmailSync hook that triggers Gmail fetch on first login and on manual refresh
 Use React Context or Zustand for global state: current user, messages list, tasks list, sync status
 Show a loading/syncing indicator when fetching from Gmail
