@@ -39,15 +39,14 @@ Map score to priority bucket: critical, high, medium, low
 Persist classification and score back to the messages table in indexed DB
 
 
-6. Task Extraction Engine
-
+5. Task Extraction Engine
 Build a TaskExtractionService that scans messages classified as action_required or with critical/high priority
 Use regex patterns to detect actionable language: scheduled appointments, payment deadlines, confirmation requests, form completions
 For ambiguous cases, use an LLM prompt to extract a clean task title from the email
 Create Task records in the Bolt Database tasks table linked to the originating message
 Assign task priority based on the parent message's priority bucket
-6. UI: Three-Panel Dashboard
 
+6. UI: Three-Panel Dashboard
 Build a root layout with a left sidebar for navigation and a main content area
 Panel 1 - Unified Inbox: display all fetched messages sorted by received_at, show sender, subject, snippet, category badge, and priority badge; clicking a message opens a detail view
 Panel 2 - Priority Feed: filter and display only critical and high priority messages; include visual indicators (color-coded priority badges); show a quick summary of how many items need attention
