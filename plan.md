@@ -73,8 +73,8 @@ Build a useEmailSync hook that triggers Gmail fetch on first login and on manual
 Use React Context or Zustand for global state: current user, messages list, tasks list, sync status
 Show a loading/syncing indicator when fetching from Gmail
 Handle Gmail API rate limits gracefully with retry logic and user-visible feedback
-10. plan.md Creation
 
+10. plan.md Creation
 Write a comprehensive plan.md file at the project root documenting:
 Phase 1: Foundation, auth, DB schema
 Phase 2: Gmail ingestion and normalization
@@ -85,8 +85,5 @@ Phase 6: Low priority cleanup and polish
 Each phase lists its goals, deliverables, and dependencies on prior phases
 Clarifying Questions:
 
-For the LLM classification layer, do you have a preferred AI provider (OpenAI GPT-4o, Anthropic Claude, or Gemini), or should the plan include whichever is most cost-effective for a demo?
 
-For the Gmail sync frequency, should the initial fetch pull the last N emails (e.g., last 100 or 200), or should it fetch all inbox emails up to a configurable limit?
-
-For the "archive" action in the low priority cleanup, should this only update the status in your local Bolt Database DB (safe, no changes to Gmail), or should it eventually write back to Gmail to actually archive in Gmail as well (requires gmail.modify scope)?
+For the Gmail sync frequency, should the initial fetch pull the last N emails answer: last 100 
